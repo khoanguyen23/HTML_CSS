@@ -28,14 +28,11 @@
     .user-checkbox {
         display: none;
     }
-    /* .user-checkbox:checked + .user-label + .modal {
-        display: block;
-    } */
     .menu-overlay {
         position: fixed;
         inset: 0;
         background: rgba(0, 0, 0, 0.3);
-        z-index: 1;
+        z-index: 999;
         opacity: 0;
         visibility: hidden;
         transition: 0.5s ease;
@@ -45,8 +42,7 @@
         position: fixed;
         inset: 0 40% 0 0;
         background: #fff;
-        z-index: 2;
-        /* padding: 60px; */
+        z-index: 1000;
         transform: translateX(-100%);
         transition: 0.5s ease;
         width: 300px;
@@ -87,7 +83,11 @@
     .hero__content {
         width: 80%;
         margin: 0 auto;
+        z-index: 1000;
         text-align: center;
+    }
+    .hero .container {
+        z-index: 888;
     }
     .features__list {
         grid-template-columns: 1fr 1fr;

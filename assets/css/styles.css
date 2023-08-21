@@ -98,7 +98,6 @@ a {
 }
 
 .menu-dropdown li:hover a {
-    /* background-color: #b0dfa1; */
     background: linear-gradient(to right, #84fab0 0%, #8fd3f4 51%, #84fab0 100%);
     border-radius: 10px;
     margin: 8px 5px;
@@ -131,9 +130,7 @@ a {
 /* Styling for the accordion label */
 .accordion-label {
     display: block;
-
     color: black;
-
     cursor: pointer;
     padding: 20px 0 20px 24px!important;
 }
@@ -226,9 +223,7 @@ a {
 }
 
 .navbar ul li a {
-    /* height: 100%;  */
     align-items: center; 
-    /* display: inline-flex; */
     position: relative;
 }
 
@@ -246,7 +241,6 @@ a {
 }
 
 .navbar ul li a:hover:after {
-    /* width: 70%; */
     transform: scale(1);
 }
 
@@ -298,7 +292,7 @@ a {
 }
 
 .hero video {
-    z-index: 000;
+    /* z-index: 000; */
     position: absolute;
     top: 0;
     left: 0;
@@ -308,12 +302,6 @@ a {
 }
 .hero__content {
     width: 51%;
-    /* padding: 10px;
-    backdrop-filter: blur(5px);
-    background: rgba(255, 255, 255, 0.1);
-    box-shadow: 0 5px 25px rgb(0 0 0 /20%);
-    border-radius: 10px; */
-    /* border-radius: 74% 26% 84% 16% / 41% 53% 47% 59% ; */
 }
 .hero .container {
     z-index: 888;
@@ -327,12 +315,6 @@ a {
     color: var(--neutral-white);
     background: linear-gradient(90deg, #DF1067 0%, #F45C43 100%);
     -webkit-background-clip: text;
-    /* -webkit-text-fill-color: transparent;
-    backdrop-filter: blur(10px);
-    background: rgba(255, 255, 255, 0.1); 
-    box-shadow: 0 5px 25px rgb(0 0 0 /20%); 
-    border-radius: 10px;
-    padding: 5px; */
     display: inline-block;
 }
 
@@ -363,11 +345,6 @@ a {
     font-size: 1.8rem;
     line-height: 1.78;
     color: var(--neutral-white);
-    /* color: rgba(255, 255, 255, 0.7);;
-    backdrop-filter: blur(1px);
-    background: rgba(255, 255, 255, 0.1); 
-    box-shadow: 0 5px 25px rgb(0 0 0 /20%);
-    border-radius: 10px; */
 }
 
 .hero__cta {
@@ -393,13 +370,11 @@ a {
     height: 90px;
     padding: 0 42px;
     border-radius: 12px;
-
 }
 
 .client__brand img {
     width: 70px;
     height: 70px;
-
 }
 
 .row {
@@ -409,7 +384,6 @@ a {
 
 .row-desc {
     margin-top: 23px;
-
 }
 
 .guides{
@@ -496,7 +470,6 @@ a {
 .features{
     margin-top: 41px;
     padding: 110px 0;
-    /* background: #f5fafe; */
 }
 .view__all {
     display: none;
