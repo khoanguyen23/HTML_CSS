@@ -1,0 +1,747 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Document</title>
+	<link rel="stylesheet" href="./assets/css/reset.css" />
+	<link rel="stylesheet" href="./assets/fonts/stylesheet.css" />
+	<link rel="stylesheet" href="./assets/css/styles.css" />
+	<link rel="stylesheet" href="./assets/css/responsive.css" />
+	<script src="https://kit.fontawesome.com/95c2c2f254.js" crossorigin="anonymous"></script>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css" rel="stylesheet">
+	<link
+		href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;1,200;1,400&display=swap"
+		rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+	<header class="header">
+		<div class="container">
+			<nav class="navbar">
+				<label for="menu-checkbox" class="toggle-menu">
+					<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+						<path fill="currentColor"
+							d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z" />
+					</svg>
+				</label>
+				<a href="#"><img src="./assets/img/Solo.png" alt="Solo" class="logo" /></a>
+				<ul id="pc-nav">
+					<li>
+						<a href="#">Home</a>
+
+					</li>
+					<li class="has-menu-dropdown">
+						<a href="#">Destination</a>
+						<i class="fa-solid fa-angle-down"></i>
+						<ul class="menu-dropdown">
+							<li id="menu-item-8706"
+								class="menu-item menu-item-type-custom menu-item-object-custom menu-item-8706"><a
+									class="" href="/search-solo/?location_name=Vietnam&amp;location_id=8764">Viet
+									Nam</a></li>
+							<li id="menu-item-8717"
+								class="menu-item menu-item-type-custom menu-item-object-custom menu-item-8717"><a
+									class=""
+									href="/search-solo/?location_name=Thailand&amp;location_id=8762">ThaiLand</a></li>
+							<li id="menu-item-8823"
+								class="menu-item menu-item-type-custom menu-item-object-custom menu-item-8823"><a
+									class=""
+									href="/solotour/search-solo/?location_name=Cambodia&amp;location_id=8774">Cambodia</a>
+							</li>
+							<li id="menu-item-8824"
+								class="menu-item menu-item-type-custom menu-item-object-custom menu-item-8824"><a
+									class=""
+									href="/search-solo/?location_name=Indonesia&amp;location_id=8770">Indonesia</a></li>
+						</ul>
+					</li>
+					<li><a href="#">Listing</a></li>
+					<li><a href="#">Pages</a></li>
+					<li><a href="#">Contact us</a></li>
+				</ul>
+				<div class="actions">
+					<a href="#" class="active-link">Login</a>
+					<a href="#" class="btn btn-action">Sign up</a>
+				</div>
+				<div class="actions-mobile">
+					<input type="checkbox" id="user-auth" class="user-checkbox">
+					<label for="user-auth" class="user-label">
+						<i class="fa-solid fa-user"></i>
+					</label>
+					<div class="modal-cont">
+						<label for="user-auth" class="user-overlay"></label>
+						<div class="modal-box">
+							<div class="modal__header">
+								<div class="modal__title">Log in</div>
+								<span class="modal__subtitle">Log in to add new things to your wishlist and access your
+									any device</span>
+							</div>
+							<div class="modal__advanced">
+								<a href="#" class="modal-link">
+									<i class="fa-brands fa-google"></i>
+									<span>CONTINUE WITH GOOGLE</span></a>
+							</div>
+							<div class="modal__body">
+								<form action="#" class="form" method="post">
+									<div class="form-separate">
+										<label class="title-form">Or</label>
+									</div>
+									<div class="form-group">
+										<input type="text" class="form-control" name="username" autocomplete="off"
+											placeholder="Email or Username">
+									</div>
+									<div class="form-group">
+										<input type="password" class="form-control" name="password" autocomplete="off"
+											placeholder="Password">
+									</div>
+									<div class="form-check">
+										<div class="remember-checkbox">
+											<label for="remember-me" class="c-grey">
+												<input type="checkbox" name="remember" id="remember-me" value="1">
+												Remember me <span class="checkmark fcheckbox"></span>
+											</label>
+										</div>
+										<a href="#" class="forgot-password" data-toggle="modal">Forgot
+											Password?</a>
+									</div>
+									<div class="form-group">
+										<input type="submit" name="submit" class="form-submit" value="Log In">
+									</div>
+									<div class="message-wrapper"></div>
+									<div class="message-content">
+										New here? <a href="#" class="open-signup" data-toggle="modal">Create an
+											Account</a>
+									</div>
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+
+			</nav>
+		</div>
+	</header>
+	<header class="mobile-header">
+		<input type="checkbox" name="" id="menu-checkbox" class="menu-checkbox" hidden />
+
+		<!-- Overlay -->
+		<label for="menu-checkbox" class="menu-overlay"></label>
+
+		<!-- Menu content -->
+		<div class="menu-drawer">
+			<!-- Logo -->
+			<a href="#">
+				<img src="./assets/img/Solo.png" alt="Besnik." />
+			</a>
+
+			<!-- Navigation -->
+			<ul id="mobile-nav">
+				<li><a href="#">Home</a></li>
+				<li>
+					<input type="checkbox" id="pages-toggle" class="accordion-checkbox">
+					<label for="pages-toggle" class="accordion-label">Destination<i
+							class="fa-solid fa-angle-down"></i></label>
+					<!-- <i class="icon">▼</i> -->
+					<ul class="accordion-content">
+						<li><a href="#">Viet Nam</a></li>
+						<li><a href="#">ThaiLand</a></li>
+						<li><a href="#">Cambodia</a></li>
+						<li><a href="#">Indonesia</a></li>
+					</ul>
+				</li>
+				<li><a href="#">Listing</a></li>
+				<li><a href="#">Pages</a></li>
+				<li><a href="#">Contact us</a></li>
+			</ul>
+		</div>
+	</header>
+
+	<main>
+		<!-- <div class="pop-up">
+			<video src="./assets/mv-pc.mp4" style="width: 100%" autoplay muted></video>
+		</div> -->
+		<section class="hero">
+			<video src="./assets/video-bg.mp4" class="hero__slider" autoplay muted loop>\
+
+			</video>
+
+			<div class="container">
+				<div class="hero__content">
+					<p class="hero__subtile">Never ending footsteps</p>
+					<h1 class="hero__title">
+						Discover a place <span>you'll love to live.</span>
+					</h1>
+					<p class="hero__desc">
+						Get the best real estate deals first, before they hit the mass
+						market! HOT FORECLOSURE DEALS with one simple search
+					</p>
+					<a href="#!" class="btn hero__cta">More About Us</a>
+				</div>
+				<!-- <img src="./assets/img/house illustration1.png" style="width: 584px; height: 620px" alt="hero image"
+					class="hero__img" /> -->
+			</div>
+		</section>
+		<section class="client">
+			<div class="container">
+				<div class="row">
+					<img src="./assets/img/Solo.png" alt="logo" />
+					<div class="client__rating">
+						<img src="./assets/img/Star.svg" alt="start" />
+						<img src="./assets/img/Star.svg" alt="start" />
+						<img src="./assets/img/Star.svg" alt="start" />
+						<img src="./assets/img/Star.svg" alt="start" />
+						<img src="./assets/img/Star.svg" alt="start" />
+					</div>
+				</div>
+				<div class="row row-desc">
+					<p class="client__desc">
+						More than 45,000+ companies trust nexcent
+					</p>
+					<p class="client__desc">5 Star Ratings (2k+ Review)</p>
+				</div>
+				<div class="client__brand">
+					<a href="#"><img src="./assets/img/brand-1.svg" alt="client logo" /></a>
+					<a href="#"><img src="./assets/img/brand-2.svg" alt="client logo" /></a>
+					<a href="#"><img src="./assets/img/brand-3.svg" alt="client logo" /></a>
+					<a href="#"><img src="./assets/img/brand-4.svg" alt="client logo" /></a>
+					<a href="#"><img src="./assets/img/brand-5.svg" alt="client logo" /></a>
+					<a href="#"><img src="./assets/img/brand-6.svg" alt="client logo" /></a>
+					<a href="#"><img src="./assets/img/brand-7.svg" alt="client logo" /></a>
+				</div>
+			</div>
+		</section>
+		<section id="services" class="guides">
+			<div class="container">
+				<h2 class="guides__subtile">How its works?</h2>
+				<p class="guides__desc">
+					Everything you need to know when you're looking to buy, rent, or
+					sell - all in one place.
+				</p>
+				<ul class="guides__list">
+					<li class="guides__item">
+						<img src="./assets/img/cart-icon.svg" alt="cart-icon" class="icon" />
+						<h3 class="guides__title">Buyer Guides</h3>
+						<a href="#" class="guides__link">
+							<span>How to buy</span>
+							<img src="./assets/img/right.svg" alt="arrow-right" class="arrow" />
+						</a>
+					</li>
+					<li class="guides__item">
+						<img src="./assets/img/rent-icon.svg" alt="rent-icon" class="icon" />
+						<h3 class="guides__title">Renter Guides</h3>
+						<a href="#" class="guides__link">
+							<span>How to rent</span>
+							<img src="./assets/img/right.svg" alt="arrow-right" class="arrow" />
+						</a>
+					</li>
+					<li class="guides__item">
+						<img src="./assets/img/sell-icon.svg" alt="sell-icon" class="icon" />
+						<h3 class="guides__title">Seller Guides</h3>
+						<a href="#" class="guides__link">
+							<span>How to sell</span>
+							<img src="./assets/img/right.svg" alt="arrow-right" class="arrow" />
+						</a>
+					</li>
+				</ul>
+				<div class="guides__cta">
+					<a href="#" class="btn btn-guides">Sell Full Guidelines</a>
+				</div>
+			</div>
+		</section>
+		<section class="features" id="featured">
+			<div class="container">
+				<header>
+					<h2 class="features__title">Featured Properties</h2>
+					<div class="row">
+						<p class="features__desc">
+							Everything you need to know when you're looking
+						</p>
+						<a href="#" class="features__link">
+							<span>View All Properties</span>
+							<img src="./assets/img/arrow-right.svg" alt="arrow" class="arrow" />
+						</a>
+					</div>
+				</header>
+				<div class="features__list">
+					<div class="features__item">
+						<div class="features__item__header">
+							<div class="features__thumb">
+								<a href="#">
+									<img src="./assets/img/features-1.jpg" alt="thumbnail" class="features__thumb__img"
+										loading="lazy" decoding="async" />
+								</a>
+							</div>
+							<span class="features__tag">VIETNAM</span>
+						</div>
+						<div class="features__item__body">
+							<h3 class="features__name">
+								<a href="#" class="features__name-color">Sapa Trekking Tours – 2 Days 1 Night Stay At
+									Homestay</a>
+							</h3>
+							<p class="features__desc">
+								Varius massa maecenas et id dictumst mattis. Donec fringilla
+								ac parturient posuere id phasellus erat elementum nullam lacus
+								cursus rhoncus parturient vitae praesent quisque nascetur
+								molestie quis
+							</p>
+							<!-- <div class="features__info">
+						<img src="./assets/img/bed.svg" alt="bed" class="icon" />
+						<span class="label">5 Beds</span>
+						<img src="./assets/img/both.svg" alt="both" class="icon" />
+						<span class="label">2 both</span>
+						<img src="./assets/img/sqft.svg" alt="sqft" class="icon" />
+						<span class="label">2000 Sqft</span>
+					 </div> -->
+						</div>
+						<div class="features__item__footer">
+							<div class="footer__wrapper">
+								<div class="footer__left">
+									<span class="features__item__price">
+										<span class="features__item__price-style"> €170,00 </span>
+									</span>
+								</div>
+								<div class="footer__right">
+									<a href="#" class="btn-hover">BOOK NOW</a>
+								</div>
+							</div>
+						</div>
+						<div class="features__item__detail">
+							<div class="detail__wrapper">
+								<div class="detail__item">
+									<div class="item__icon">
+										<img src="./assets/img/duration.svg" alt="duration-logo" />
+									</div>
+									<div class="item__info">
+										<h4 class="info__name">Duration</h4>
+										<p class="info__value">2 days</p>
+									</div>
+								</div>
+								<div class="detail__item">
+									<div class="item__icon">
+										<img src="./assets/img/group.svg" alt="group-logo" />
+									</div>
+									<div class="item__info">
+										<h4 class="info__name">Group Size</h4>
+										<p class="info__value">4 people</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="features__item">
+						<div class="features__item__header">
+							<div class="features__thumb">
+								<a href="#">
+									<img src="./assets/img/features-1.jpg" alt="thumbnail" class="features__thumb__img"
+										loading="lazy" decoding="async" />
+								</a>
+							</div>
+							<span class="features__tag">VIETNAM</span>
+						</div>
+						<div class="features__item__body">
+							<h3 class="features__name">
+								<a href="#" class="features__name-color">Sapa Trekking Tours – 2 Days 1 Night Stay At
+									Homestay</a>
+							</h3>
+							<p class="features__desc">
+								Varius massa maecenas et id dictumst mattis. Donec fringilla
+								ac parturient posuere id phasellus erat elementum nullam lacus
+								cursus rhoncus parturient vitae praesent quisque nascetur
+								molestie quis
+							</p>
+							<!-- <div class="features__info">
+						<img src="./assets/img/bed.svg" alt="bed" class="icon" />
+						<span class="label">5 Beds</span>
+						<img src="./assets/img/both.svg" alt="both" class="icon" />
+						<span class="label">2 both</span>
+						<img src="./assets/img/sqft.svg" alt="sqft" class="icon" />
+						<span class="label">2000 Sqft</span>
+					 </div> -->
+						</div>
+						<div class="features__item__footer">
+							<div class="footer__wrapper">
+								<div class="footer__left">
+									<span class="features__item__price">
+										<span class="features__item__price-style"> €170,00 </span>
+									</span>
+								</div>
+								<div class="footer__right">
+									<a href="#" class="btn-hover">BOOK NOW</a>
+								</div>
+							</div>
+						</div>
+						<div class="features__item__detail">
+							<div class="detail__wrapper">
+								<div class="detail__item">
+									<div class="item__icon">
+										<img src="./assets/img/duration.svg" alt="duration-logo" />
+									</div>
+									<div class="item__info">
+										<h4 class="info__name">Duration</h4>
+										<p class="info__value">2 days</p>
+									</div>
+								</div>
+								<div class="detail__item">
+									<div class="item__icon">
+										<img src="./assets/img/group.svg" alt="group-logo" />
+									</div>
+									<div class="item__info">
+										<h4 class="info__name">Group Size</h4>
+										<p class="info__value">4 people</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="features__item">
+						<div class="features__item__header">
+							<div class="features__thumb">
+								<a href="#">
+									<img src="./assets/img/features-1.jpg" alt="thumbnail" class="features__thumb__img"
+										loading="lazy" decoding="async" />
+								</a>
+							</div>
+							<span class="features__tag">VIETNAM</span>
+						</div>
+						<div class="features__item__body">
+							<h3 class="features__name">
+								<a href="#" class="features__name-color">Sapa Trekking Tours – 2 Days 1 Night Stay At
+									Homestay</a>
+							</h3>
+							<p class="features__desc">
+								Varius massa maecenas et id dictumst mattis. Donec fringilla
+								ac parturient posuere id phasellus erat elementum nullam lacus
+								cursus rhoncus parturient vitae praesent quisque nascetur
+								molestie quis
+							</p>
+							<!-- <div class="features__info">
+						<img src="./assets/img/bed.svg" alt="bed" class="icon" />
+						<span class="label">5 Beds</span>
+						<img src="./assets/img/both.svg" alt="both" class="icon" />
+						<span class="label">2 both</span>
+						<img src="./assets/img/sqft.svg" alt="sqft" class="icon" />
+						<span class="label">2000 Sqft</span>
+					 </div> -->
+						</div>
+						<div class="features__item__footer">
+							<div class="footer__wrapper">
+								<div class="footer__left">
+									<span class="features__item__price">
+										<span class="features__item__price-style"> €170,00 </span>
+									</span>
+								</div>
+								<div class="footer__right">
+									<a href="#" class="btn-hover">BOOK NOW</a>
+								</div>
+							</div>
+						</div>
+						<div class="features__item__detail">
+							<div class="detail__wrapper">
+								<div class="detail__item">
+									<div class="item__icon">
+										<img src="./assets/img/duration.svg" alt="duration-logo" />
+									</div>
+									<div class="item__info">
+										<h4 class="info__name">Duration</h4>
+										<p class="info__value">2 days</p>
+									</div>
+								</div>
+								<div class="detail__item">
+									<div class="item__icon">
+										<img src="./assets/img/group.svg" alt="group-logo" />
+									</div>
+									<div class="item__info">
+										<h4 class="info__name">Group Size</h4>
+										<p class="info__value">4 people</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<!-- <div class="features__item">
+				  <div class="features__item__header">
+					 <div class="features__thumb">
+						<a href="#">
+						  <img
+							 src="./assets/img/features-2.jpg"
+							 alt="thumbnail"
+							 class="features__thumb__img"
+						  />
+						</a>
+					 </div>
+				  </div>
+				  <div class="features__item__body">
+					 <h3 class="features__name">
+						<a href="#">CouCou Homestead</a>
+					 </h3>
+					 <p class="features__desc">
+						8502 Preston Rd. Inglewood, Maine 98280
+					 </p>
+					 <div class="features__info">
+						<img src="./assets/img/bed.svg" alt="bed" class="icon" />
+						<span class="label">5 Beds</span>
+						<img src="./assets/img/both.svg" alt="both" class="icon" />
+						<span class="label">2 both</span>
+						<img src="./assets/img/sqft.svg" alt="sqft" class="icon" />
+						<span class="label">2000 Sqft</span>
+					 </div>
+				  </div>
+				</div>
+				<div class="features__item">
+				  <div class="features__item__header">
+					 <div class="features__thumb">
+						<a href="#">
+						  <img
+							 src="./assets/img/features-3.jpg"
+							 alt="thumbnail"
+							 class="features__thumb__img"
+						  />
+						</a>
+					 </div>
+				  </div>
+				  <div class="features__item__body">
+					 <h3 class="features__name">
+						<a href="#">Nikko Apartments</a>
+					 </h3>
+					 <p class="features__desc">
+						8502 Preston Rd. Inglewood, Maine 98280
+					 </p>
+					 <div class="features__info">
+						<img src="./assets/img/bed.svg" alt="bed" class="icon" />
+						<span class="label">5 Beds</span>
+						<img src="./assets/img/both.svg" alt="both" class="icon" />
+						<span class="label">2 both</span>
+						<img src="./assets/img/sqft.svg" alt="sqft" class="icon" />
+						<span class="label">2000 Sqft</span>
+					 </div>
+				  </div>
+				</div> -->
+				</div>
+				<div class="view__all show-on-mobile">
+					<a href="#" class="btn-hover">View all property</a>
+				</div>
+			</div>
+		</section>
+		<section class="location">
+			<div class="container">
+				<div class="location__text">
+					<p class="location__subtitle">Location</p>
+					<h3 class="location__title">Where Do You Want to Travel?</h3>
+				</div>
+				<div class="splide" role="group" aria-label="Splide Basic HTML Example">
+					<div class="splide__track">
+						  <div class="splide__list">
+							  <div class="splide__slide">
+								<a href="#">
+									<img src="https://images.unsplash.com/photo-1530122037265-a5f1f91d3b99?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" class="img__splide" alt="">
+								</a>
+							  </div>
+							  <div class="splide__slide">
+								<a href="#">
+									<img src="https://images.unsplash.com/photo-1594069758873-e79e9075eb7d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" class="img__splide" alt="">
+								</a>
+							  </div>
+							  <div class="splide__slide">
+								<a href="#">
+									<img src="https://images.unsplash.com/photo-1515488764276-beab7607c1e6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1106&q=80" class="img__splide" alt="">
+								</a>
+							  </div>
+							  
+							  
+							  
+						  </div>
+					</div>
+				  </div>
+				<div class="location__list">
+					<div class="location__item">
+						<a href="#">
+							<img src="./assets/img/location1.png" alt="location1" class="location__image">
+						</a>
+					</div>
+					<div class="location__item">
+						<a href="#">
+							<img src="./assets/img/location2.png" alt="location1" class="location__image">
+						</a>
+					</div>
+					<div class="location__item">
+						<a href="#">
+							<img src="./assets/img/location3.jpg" alt="location1" class="location__image">
+						</a>
+					</div>
+					<div class="location__item">
+						<a href="#">
+							<img src="./assets/img/location4.png" alt="location1" class="location__image">
+						</a>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section id="resources" class="stats">
+			<div class="container">
+				<div class="row">
+					<div class="stats__media">
+						<img src="./assets/img/stats-img.jpg" alt="stats-image" class="stats__image">
+						<div class="stats__trend">
+							<div class="row">
+								<strong class="stats__trend--value">40,000+</strong>
+								<img src="./assets/img/Vector 120.svg" alt="trend" class="icon">
+							</div>
+							<p class="stats__desc">By avarage for 2 bedroom apments in San Francisco, CA</p>
+							<div class="separate"></div>
+							<div class="stats__block">
+								<div class="stats__group">
+									<img src="./assets/img/avatar-1.jpg" alt="avatar" class="avatar">
+									<img src="./assets/img/avatar-2.jpg" alt="avatar" class="avatar">
+								</div>
+								<div class="stats__group">
+									<img src="./assets/img/avatar-3.jpg" alt="avatar" class="avatar">
+									<img src="./assets/img/avatar-4.webp" alt="" class="avatar">
+									<img src="./assets/img/avatar-5.jpg" alt="avatar" class="avatar">
+									<div class="avatar avatar--style1">R</div>
+								</div>
+								<div class="stats__group">
+									<div class="avatar avatar--style1">FJ</div>
+									<img src="./assets/img/avatar-5.jpg" alt="avatar" class="avatar">
+									<div class="avatar avatar--style1">S</div>
+								</div>
+								<div class="stats__group">
+									<img src="./assets/img/avatar-3.jpg" alt="avatar" class="avatar">
+									<img src="./assets/img/avatar-4.webp" alt="" class="avatar">
+									<img src="./assets/img/avatar-5.jpg" alt="avatar" class="avatar">
+									<div class="avatar avatar--style1">JJ</div>
+								</div>
+								<div class="stats__group">
+									<img src="./assets/img/avatar-3.jpg" alt="avatar" class="avatar">
+									<div class="avatar avatar--style1">JJ</div>
+								</div>
+								<div class="stats__group">
+									<img src="./assets/img/avatar-3.jpg" alt="avatar" class="avatar">
+									<img src="./assets/img/avatar-3.jpg" alt="avatar" class="avatar">
+								</div>
+								<div class="stats__group">
+									<img src="./assets/img/avatar-3.jpg" alt="avatar" class="avatar">
+									<div class="avatar avatar--style1">JJ</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="stats__info">
+						<h2 class="stats__subtitle">You’ve found a neighborhood you love.</h2>
+						<p class="stats__desc">When you own a home, you’re committing to living in one location for a
+							while. In a recent Trulia survey, we found that five out of six respondents said finding the
+							right neighborhood</p>
+					</div>
+				</div>
+				<div class="row row-qty">
+					<div class="qty__item">
+						<strong class="qty--value">2,500</strong>
+						<p class="qty__desc">Homes For Sale</p>
+					</div>
+					<div class="qty__item">
+						<strong class="qty--value">2,500</strong>
+						<p class="qty__desc">Homes For Sale</p>
+					</div>
+					<div class="qty__item">
+						<strong class="qty--value">2,500</strong>
+						<p class="qty__desc">Homes For Sale</p>
+					</div>
+				</div>
+			</div>
+		</section>
+		<div id="contact" class="subscription">
+			<div class="container">
+				<div class="body">
+					<div class="contact__info">
+						<h2 class="contact__title">Subscribe to our Newsletter!</h2>
+						<p class="contact__desc">
+							Subscribe to our newsletter and stay updated.
+						</p>
+						<a href="#" class="btn-hover btn-highlight">Subcrise</a>
+					</div>
+					<img src="./assets/img/home illustration.svg" alt="image contact" class="contact__image" />
+				</div>
+			</div>
+		</div>
+	</main>
+	<footer class="footer">
+		<div class="container">
+			<div class="row row-top">
+				<div class="column">
+					<h3 class="footer__heading">Product</h3>
+					<ul class="list">
+						<li class="item"><a href="#">Listing</a></li>
+						<li class="item"><a href="#">Property</a></li>
+						<li class="item"><a href="#">Agents</a></li>
+						<li class="item"><a href="#">Blog</a></li>
+					</ul>
+				</div>
+				<div class="column">
+					<h3 class="footer__heading">Product</h3>
+					<ul class="list">
+						<li class="item"><a href="#">Listing</a></li>
+						<li class="item"><a href="#">Property</a></li>
+						<li class="item"><a href="#">Agents</a></li>
+						<li class="item"><a href="#">Blog</a></li>
+					</ul>
+				</div>
+				<div class="column">
+					<h3 class="footer__heading">Product</h3>
+					<ul class="list">
+						<li class="item"><a href="#">Listing</a></li>
+						<li class="item"><a href="#">Property</a></li>
+						<li class="item"><a href="#">Agents</a></li>
+						<li class="item"><a href="#">Blog</a></li>
+					</ul>
+				</div>
+				<div class="column">
+					<h3 class="footer__heading">Product</h3>
+					<p class="footer__desc">
+						You’ll find your next home, in any style you prefer.
+					</p>
+					<p>
+						<img src="./assets/img/fb.png" alt="facebook" class="footer__social">
+						<img src="./assets/img/insta.png" alt="insta" class="footer__social">
+						<img src="./assets/img/pin.png" alt="pin" class="footer__social">
+						<img src="./assets/img/twitter.png" alt="twitter" class="footer__social">
+					</p>
+				</div>
+			</div>
+			<div class="row row-bottom">
+				<img src="./assets/img/Solo.png" alt="Besnik." class="logo" />
+				<p class="copyright">
+					Copyright 2020.com, All rights reserved.
+				</p>
+			</div>
+		</div>
+		</div>
+	</footer>
+
+	<!-- <div class="dropdown">
+        <input type="checkbox" id="menu-toggle" class="dropdown-checkbox">
+        <label for="menu-toggle" class="dropdown-btn">Menu</label>
+        <ul class="dropdown-content">
+            <li><a href="#">Item 1</a></li>
+            <li><a href="#">Item 2</a></li>
+            <li><a href="#">Item 3</a></li>
+        </ul>
+    </div> -->
+	<script src="index.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+	<script type="text/javascript">
+		var splide = new Splide( '.splide', {
+  type   : 'loop',
+  padding: '5rem',
+//   perPage: 1,
+} );
+
+splide.mount();
+	</script>
+
+</body>
+
+</html>
